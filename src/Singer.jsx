@@ -1,9 +1,9 @@
 import './App.css'
-export default function Singer({name, age}) {
+export default function Singer({singer}) {
     return (
         <div className="secondary-style">
-            <h5>Name: {name}</h5>
-            <p>Age: {age}</p>
+            <h5>Name: {singer.name}</h5>
+            <p>Age: {singer.age}</p>
         </div>
     )
 }

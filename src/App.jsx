@@ -3,12 +3,13 @@ import ToDo from './ToDo';
 import ToEat from './ToEat';
 import Actor from './Actor';
 import Singer from './Singer';
+import Library from './Library';
 
 function App() {
 
   // const doTime = '30 Days';
 
-  const actors = ['Bappi', 'Jayed', 'Solmom', 'Jasim', 'Man Na', 'Rajjak'];
+  const actors = ['Bappi', 'Jayed', 'Man Na'];
 
   const singers = [
     { id: 1, name: 'Dr. Mahfuz', age: 60 },
@@ -16,10 +17,19 @@ function App() {
     { id: 3, name: 'Hasan', age: 50 }
   ];
 
+  const books = [
+    { id: 1, name: 'Physics', price: 250 },
+    { id: 2, name: 'Chemistry', price: 350 },
+    { id: 3, name: 'Math', price: 255 },
+    { id: 4, name: 'Biology', price: 290 },
+  ]
+
 
   return (
     <>
       <h1>Intro to React</h1>
+
+      <Library books={books}></Library>
 
       <h3>Our Nayoks</h3>
       {
